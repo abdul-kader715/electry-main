@@ -1558,6 +1558,9 @@
 			left: 53%;
 			top: 27px;
 			height: 67px;
+			@media (max-width:1399px) {
+				left: 46%;
+			}
 		}
 
 		.call-btn {

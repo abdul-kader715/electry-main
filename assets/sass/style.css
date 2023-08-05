@@ -17,49 +17,62 @@ Version:        1.0.0
 	2.2 navigation
 
 3. content
-	3.1 electry-hero-slider
+	3.1 electry-hero-style
 	3.2 electry-features-section
-	3.3 electry-contact-section
-	3.4 electry-service-section
-	3.5 electry-case-section
-	3.6 electry-testimonials-section
-	3.7 electry-team-section
-	3.8 electry-consultancy-section
-	3.9 electry-blog-section
+	3.3 electry-about-section 
+	3.4 electry-servces-section
+	3.5 electry-brand-section
+	3.6 electry-trusted-section
+	3.7 electry-counter-section
+	3.8 electry-project-section
+	3.9 electry-get-quate-section
+	3.10 electry-video-section 
+	3.11 electry-faq-section 
+	3.12 electry-process-section
+	3.13 electry-testiminial-section
+	3.13 electry-blog-section
+	3.14 electry-cta-section
 
-4. electry-footer
+4. electry-footer-section
 
 5. Home-style-2
-   5.1	electry-features-section-s2
-   5.2	electry-about-section
-   5.3	electry-service-section-s2
-   5.4	electry-fun-fact-section
+   5.1 electry-features-section-s2
+   5.2 electry-about-section-s2
+   5.3 electry-more-catagroeis-section
+   5.4 electry-call-message-section
+   5.5 electry-service-section-s2
+   5.6 electry-counter-section-s2
+   5.7 electry-process-section-s2
+   5.8 electry-brand-section-s2
+   5.9 electry-testimonial-section-s2
+   5.10 electry-team-section
+   5.11 electry-project-section-s2
+   5.12 electry-blog-section-s2
 
-6. electry-Attorney-single
+6. Home-style-3
+   6.1 quate-info-section
+   6.2 electry-about-section-s3 
+   6.3 electry-servces-section-s3
+   6.4 electry-features-section-s3
+   6.5 electry-testiminial-section-s3
+   6.6 electry-team-section-s2
+   6.7 electry-faq-section-s2
+   6.8 electry-counter-section-s3
+   6.9 electry-project-section-s3
+   6.10 electry-blog-section-s2
+   6.11 electry-Map-section
 
 7. electry-service-single-section
 
-8. electry-case-section
+8. electry-proejct-single-section
 
-9. electry-cart-page-style
+9. electry-blog-section
 
-10. electry-checkout-page-style
+10. electry-blog-single-section
 
-11. electry-shop-page
+11. electry-contact-pg-section 
 
-12. electry-shop-single-page
-
-13. electry-pricing-page
-
-14. electry-faq-page
-
-15. electry-blog-pg-section
-
-16. electry-blog-single-section
-
-17. electry-contact-pg-section
-
-18. error-404-section
+12. error-404-section
 
 ----------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -2347,6 +2360,11 @@ img {
   top: 27px;
   height: 67px;
 }
+@media (max-width: 1399px) {
+  .electry-header-section-s2 .electry-site-header .header-right::before {
+    left: 46%;
+  }
+}
 .electry-header-section-s2 .electry-site-header .call-btn {
   display: flex;
   align-items: center;
@@ -3024,7 +3042,7 @@ img {
 }
 
 /*--------------------------------------------------------------
-4. electry-footer
+4. electry-footer-section
 --------------------------------------------------------------*/
 .electry-site-footer {
   background: #00205C;
@@ -3124,7 +3142,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .electry-site-footer .link-widget {
-    padding-left: 40px;
+    padding-left: 30px;
   }
 }
 @media (max-width: 1199px) {
@@ -3315,7 +3333,7 @@ img {
   top: 0;
 }
 
-/* electry-features-section */
+/*3.2 electry-features-section */
 .electry-features-section {
   padding-top: 55px;
   padding-bottom: 70px;
@@ -3444,7 +3462,7 @@ img {
   visibility: visible;
 }
 
-/* electry-about-section */
+/*3.3 electry-about-section */
 .electry-about-section {
   padding-top: 0;
 }
@@ -3763,7 +3781,7 @@ img {
   border: 1px dashed #004ee6;
 }
 
-/* electry-servces-section */
+/*3.4 electry-servces-section */
 .electry-servces-section {
   background: url(../images/servces/service_bg.jpg);
   background-repeat: no-repeat;
@@ -3970,7 +3988,7 @@ img {
   color: #fff;
 }
 
-/* electry-brand-section*/
+/*3.5 electry-brand-section*/
 .electry-brand-section {
   background: url(../images/brand/bg.jpg);
   background-repeat: no-repeat;
@@ -4014,7 +4032,7 @@ img {
   display: none;
 }
 
-/* electry-trusted-section */
+/*3.6 electry-trusted-section */
 .electry-trusted-section {
   position: relative;
   margin-bottom: -47px;
@@ -4164,7 +4182,7 @@ img {
   z-index: -1;
 }
 
-/* electry-counter-section */
+/*3.7 electry-counter-section */
 .electry-counter-section {
   background: #00205C;
   position: relative;
@@ -4401,7 +4419,7 @@ img {
   }
 }
 
-/* electry-project-section */
+/*3.8 electry-project-section */
 .electry-project-section {
   position: relative;
   z-index: 1;
@@ -4538,7 +4556,7 @@ img {
   fill: #0057FF;
 }
 
-/* electry-get-quate-section */
+/*3.9 electry-get-quate-section */
 .electry-get-quate-section {
   position: relative;
   margin-bottom: -60px;
@@ -4647,7 +4665,7 @@ img {
   line-height: 24px;
 }
 
-/* .electry-video-section */
+/*3.10 electry-video-section */
 .electry-video-section {
   background: url(../images/video_bg.jpg);
   background-repeat: no-repeat;
@@ -4823,7 +4841,7 @@ img {
   }
 }
 
-/* electry-faq-section */
+/*3.11 electry-faq-section */
 .electry-faq-section {
   background: #EEF1F4;
   position: relative;
@@ -5019,7 +5037,7 @@ img {
   line-height: 28px;
 }
 
-/* electry-process-section */
+/*3.12 electry-process-section */
 .electry-process-section {
   background: #FFF;
   box-shadow: 0px 24px 34px 0px rgba(55, 84, 128, 0.07);
@@ -5224,11 +5242,16 @@ img {
   color: #fff;
 }
 
-/* electry-testiminial-section */
+/*3.13 electry-testiminial-section */
 .electry-testiminial-section {
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  .electry-testiminial-section.s2 {
+    padding-bottom: 0;
+  }
 }
 .electry-testiminial-section .shape {
   position: absolute;
@@ -5236,11 +5259,21 @@ img {
   bottom: 0;
   z-index: -1;
 }
+@media (max-width: 991px) {
+  .electry-testiminial-section .shape {
+    display: none;
+  }
+}
 .electry-testiminial-section .shape-2 {
   position: absolute;
   left: 250px;
   top: 150px;
   z-index: -1;
+}
+@media (max-width: 1399px) {
+  .electry-testiminial-section .shape-2 {
+    display: none;
+  }
 }
 .electry-testiminial-section .feed {
   position: absolute;
@@ -5254,6 +5287,11 @@ img {
   align-items: center;
   justify-content: center;
   background: #0057FF;
+}
+@media (max-width: 1499px) {
+  .electry-testiminial-section .feed {
+    display: none;
+  }
 }
 .electry-testiminial-section .feed span {
   color: #FFF;
@@ -5273,6 +5311,11 @@ img {
   border: 7px solid #FFF;
   box-shadow: 0px 10px 15px 0px rgba(97, 111, 134, 0.09);
 }
+@media (max-width: 1399px) {
+  .electry-testiminial-section .left-image {
+    display: none;
+  }
+}
 .electry-testiminial-section .left-image img {
   border-radius: 78px;
 }
@@ -5287,8 +5330,93 @@ img {
   border: 7px solid #FFF;
   box-shadow: 0px 10px 15px 0px rgba(97, 111, 134, 0.09);
 }
+@media (max-width: 1399px) {
+  .electry-testiminial-section .right-image {
+    display: none;
+  }
+}
 .electry-testiminial-section .right-image img {
   border-radius: 78px;
+}
+.electry-testiminial-section .active-item {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 777px;
+  margin: 0 auto;
+  margin-left: 397px;
+  margin-top: 30px;
+}
+@media (max-width: 1399px) {
+  .electry-testiminial-section .active-item {
+    margin-left: 320px;
+  }
+}
+@media (max-width: 1199px) {
+  .electry-testiminial-section .active-item {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 991px) {
+  .electry-testiminial-section .active-item {
+    margin-left: 0px;
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .electry-testiminial-section .active-item {
+    width: 100%;
+  }
+}
+.electry-testiminial-section .active-item .nav-item {
+  cursor: pointer;
+}
+.electry-testiminial-section .active-item .content {
+  height: 41px;
+  width: 189px;
+  border-radius: 30.5px;
+  border: 1px dashed #D9D9D9;
+  background: #FFF;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+@media (max-width: 1199px) {
+  .electry-testiminial-section .active-item .content {
+    margin-right: 0;
+  }
+}
+.electry-testiminial-section .active-item .content .image {
+  width: 54px;
+  height: 54px;
+  border-radius: 54px;
+  border: 3px solid #FFF;
+  box-shadow: 0px 10px 15px 0px rgba(97, 111, 134, 0.09);
+  margin-left: -10px;
+}
+.electry-testiminial-section .active-item .content .image img {
+  border-radius: 54px;
+}
+.electry-testiminial-section .active-item .content .text {
+  color: #0F0F2D;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+.electry-testiminial-section .nav-link.active {
+  color: transparent;
+  background-color: transparent;
+}
+.electry-testiminial-section .nav-link.active .content {
+  border: 1px dashed #D9D9D9;
+  background: #0F0F2D;
+}
+.electry-testiminial-section .nav-link.active .content .text {
+  color: #fff;
 }
 
 .testiminial-left-content {
@@ -5297,6 +5425,16 @@ img {
 }
 .testiminial-left-content .image-slider {
   margin: 0 auto;
+}
+@media (max-width: 1699px) {
+  .testiminial-left-content .image-slider {
+    margin-left: 110px;
+  }
+}
+@media (max-width: 1399px) {
+  .testiminial-left-content .image-slider {
+    margin-left: 0px;
+  }
 }
 .testiminial-left-content .image-slider .single-img {
   width: 250px;
@@ -5322,6 +5460,21 @@ img {
   left: 18%;
   top: 45%;
 }
+@media (max-width: 1699px) {
+  .testiminial-left-content .quate-icon {
+    left: 30%;
+  }
+}
+@media (max-width: 1399px) {
+  .testiminial-left-content .quate-icon {
+    left: 18%;
+  }
+}
+@media (max-width: 991px) {
+  .testiminial-left-content .quate-icon {
+    display: none;
+  }
+}
 .testiminial-left-content .retin {
   text-align: center;
   margin-top: 20px;
@@ -5331,6 +5484,12 @@ img {
   display: inline-block;
 }
 
+@media (max-width: 991px) {
+  .testiminial-slider .item {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
 .testiminial-slider .item h3 {
   color: #00205C;
   font-family: "Raleway", sans-serif;
@@ -5338,6 +5497,12 @@ img {
   font-weight: 600;
   line-height: 46px;
   margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .testiminial-slider .item h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 .testiminial-slider .item h2 {
   color: #0F0F2D;
@@ -5353,43 +5518,8 @@ img {
   font-weight: 400;
   text-transform: capitalize;
 }
-.testiminial-slider .active-item {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-}
-.testiminial-slider .active-item .content {
-  height: 41px;
-  width: 189px;
-  border-radius: 30.5px;
-  border: 1px dashed #D9D9D9;
-  background: #FFF;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-}
-.testiminial-slider .active-item .content .image {
-  width: 54px;
-  height: 54px;
-  border-radius: 54px;
-  border: 3px solid #FFF;
-  box-shadow: 0px 10px 15px 0px rgba(97, 111, 134, 0.09);
-  margin-left: -10px;
-}
-.testiminial-slider .active-item .content .image img {
-  border-radius: 54px;
-}
-.testiminial-slider .active-item .content .text {
-  color: #0F0F2D;
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: capitalize;
-  margin-left: 10px;
-}
 
+/*3.13 electry-blog-section */
 .electry-blog-section,
 .electry-blog-section-s2 {
   position: relative;
@@ -5419,13 +5549,6 @@ img {
 .electry-blog-section .bg img,
 .electry-blog-section-s2 .bg img {
   width: 100%;
-}
-@media (max-width: 767px) {
-  .electry-blog-section .bg,
-.electry-blog-section-s2 .bg {
-    display: none;
-    position: unset;
-  }
 }
 .electry-blog-section .electry-section-title,
 .electry-blog-section-s2 .electry-section-title {
@@ -5587,6 +5710,7 @@ img {
   background: #0057FF;
 }
 
+/*3.14 electry-cta-section */
 .electry-cta-section {
   position: relative;
   z-index: 11;
@@ -5755,7 +5879,8 @@ img {
   margin-bottom: 0;
 }
 
-/* electry-features-section-s2 */
+/* 5. Home-style-2 */
+/*5.1 electry-features-section-s2 */
 .electry-features-section-s2 {
   position: relative;
   margin-top: -70px;
@@ -5897,7 +6022,7 @@ img {
   background: rgba(255, 255, 255, 0.07);
 }
 
-/* electry-about-section-s2 */
+/*5.2 electry-about-section-s2 */
 .electry-about-section-s2 {
   padding-top: 0;
   position: relative;
@@ -6191,7 +6316,7 @@ img {
   }
 }
 
-/* electry-more-catagroeis-section */
+/*5.3 electry-more-catagroeis-section */
 .electry-more-catagroeis-section {
   margin: 0 30px;
 }
@@ -6461,7 +6586,7 @@ img {
   display: block;
 }
 
-/* electry-call-message-section */
+/*5.4 electry-call-message-section */
 .electry-call-message-section {
   position: relative;
   z-index: 1;
@@ -6795,7 +6920,7 @@ img {
   line-height: 26px;
 }
 
-/* electry-service-section-s2 */
+/*5.5 electry-service-section-s2 */
 .electry-service-section-s2 {
   position: relative;
   z-index: 1;
@@ -6979,7 +7104,7 @@ img {
   border-radius: 100px;
 }
 
-/* electry-counter-section-s2 */
+/*5.6 electry-counter-section-s2 */
 .electry-counter-section-s2,
 .electry-counter-section-s3 {
   background: #02225D;
@@ -7024,7 +7149,7 @@ img {
   margin-bottom: 0;
 }
 
-/* electry-process-section-s2 */
+/*5.7 electry-process-section-s2 */
 .electry-process-section-s2 {
   background: url(../images/process/bg.jpg);
   background-position: center;
@@ -7219,7 +7344,7 @@ img {
   fill: #0A1426;
 }
 
-/* electry-brand-section-s2 */
+/*5.8 electry-brand-section-s2 */
 .electry-brand-section-s2 .top-text {
   margin-bottom: 50px;
 }
@@ -7271,7 +7396,7 @@ img {
   display: none;
 }
 
-/* electry-testimonial-section-s2 */
+/*5.9 electry-testimonial-section-s2 */
 .electry-testimonial-section-s2 {
   background: url(../images/testiminial/bg.jpg);
   background-repeat: no-repeat;
@@ -7445,7 +7570,7 @@ img {
   background: #0057FF;
 }
 
-/* electry-team-section */
+/*5.10 electry-team-section */
 .electry-team-section {
   position: relative;
   z-index: 1;
@@ -7723,7 +7848,7 @@ img {
   border: 1px solid transparent;
 }
 
-/* electry-project-section-s2 */
+/*5.11 electry-project-section-s2 */
 .electry-project-section-s2 {
   position: relative;
   z-index: 1;
@@ -7952,7 +8077,7 @@ img {
   visibility: visible;
 }
 
-/* electry-blog-section-s2 */
+/*5.12 electry-blog-section-s2 */
 .electry-blog-section-s2 .electry-section-title {
   padding: 0 50px;
 }
@@ -8003,7 +8128,8 @@ img {
   border: 1px solid transparent;
 }
 
-/* quate-info-section */
+/* 6. Home-style-3 */
+/*6.1 quate-info-section */
 .quate-info-section {
   position: relative;
   z-index: 1;
@@ -8092,7 +8218,7 @@ img {
   top: 20px;
 }
 
-/* electry-about-section-s3 */
+/*6.2 electry-about-section-s3 */
 .electry-about-section-s3 .about-left-wrap {
   margin-left: 50px;
 }
@@ -8186,7 +8312,7 @@ img {
   text-transform: uppercase;
 }
 
-/* electry-servces-section-s3 */
+/*6.3 electry-servces-section-s3 */
 .electry-servces-section-s3 {
   background: #00205C;
   position: relative;
@@ -8322,7 +8448,7 @@ img {
   bottom: 0;
 }
 
-/* electry-features-section-s3 */
+/*6.4 electry-features-section-s3 */
 .electry-features-section-s3 {
   padding-bottom: 84px;
   position: relative;
@@ -8478,7 +8604,7 @@ img {
   line-height: 28.8px;
 }
 
-/* electry-testiminial-section-s3 */
+/*6.5 electry-testiminial-section-s3 */
 .electry-testiminial-section-s3 {
   position: relative;
   z-index: 1;
@@ -8706,7 +8832,7 @@ img {
   width: 100%;
 }
 
-/* electry-team-section-s2 */
+/*6.6 electry-team-section-s2 */
 .electry-team-section-s2 {
   position: relative;
   z-index: 1;
@@ -8835,7 +8961,7 @@ img {
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.09);
 }
 
-/* electry-faq-section-s2 */
+/*6.7 electry-faq-section-s2 */
 .electry-faq-section-s2 {
   background: url(../images/faq/bg.png);
   background-repeat: no-repeat;
@@ -9058,7 +9184,7 @@ img {
   }
 }
 
-/* electry-counter-section-s3 */
+/*6.8 electry-counter-section-s3 */
 .electry-counter-section-s3 {
   background: #02225D;
 }
@@ -9136,7 +9262,7 @@ img {
   }
 }
 
-/* electry-project-section-s3 */
+/*6.9 electry-project-section-s3 */
 .electry-project-section-s3 {
   margin: 0;
 }
@@ -9192,6 +9318,7 @@ img {
   color: #FFF;
 }
 
+/*6.10 electry-blog-section-s2 */
 .electry-blog-section-s2.s3 .bg {
   display: block;
   position: absolute;
@@ -9211,7 +9338,7 @@ img {
   }
 }
 
-/* electry-Map-section */
+/*6.11 electry-Map-section */
 .electry-Map-section {
   height: 394px;
   position: relative;
@@ -9236,6 +9363,7 @@ img {
   outline: 0;
 }
 
+/* 7. electry-service-single-section */
 .service-side-bar .service-list-widget li {
   list-style: none;
   margin-bottom: 13px;
@@ -9517,7 +9645,7 @@ img {
   margin-bottom: 0;
 }
 
-/* electry-proejct-single-section */
+/*8. electry-proejct-single-section */
 .electry-proejct-single-section .top-content .image {
   margin-bottom: 30px;
 }
@@ -9760,6 +9888,7 @@ img {
   margin: 0 5px;
 }
 
+/* 9. electry-blog-section */
 @media (max-width: 991px) {
   .blog-section {
     padding-bottom: 60px;
@@ -9941,6 +10070,7 @@ img {
   background: #0057FF;
 }
 
+/* 10. electry-blog-single-section */
 .blog-section.blog-single-section {
   padding-bottom: 55px;
 }
@@ -10359,6 +10489,7 @@ img {
   text-transform: capitalize;
 }
 
+/* 11. electry-contact-pg-section */
 @media (max-width: 767px) {
   .contact-address {
     margin-bottom: 50px;
@@ -10505,6 +10636,7 @@ img {
   margin-bottom: 15px;
 }
 
+/* 12. error-404-section */
 .error-wrap {
   text-align: center;
 }
