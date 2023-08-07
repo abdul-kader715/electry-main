@@ -522,6 +522,10 @@
         }
 
     }
+
+    .owl-nav {
+        display: none;
+    }
 }
 
 .servces-card {
@@ -558,6 +562,13 @@
         margin: 0 auto;
         text-align: center;
         transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 40px;
+        }
 
         &::before {
             position: absolute;
@@ -790,12 +801,11 @@
     }
 
     .trusted-left-wrap {
-        margin-left: -20px;
         overflow: hidden;
 
         .imgage {
             position: relative;
-            max-width: 489px;
+            max-width: 510px;
             max-height: 620px;
 
             img {
@@ -863,7 +873,7 @@
     }
 
     .trusted-right-wrap {
-        margin-left: 60px;
+        margin-left: 40px;
 
         @media (max-width:1199px) {
             margin-left: 0;
@@ -911,12 +921,21 @@
             ul {
 
                 li {
+                    a {
+
+                        color: #fff;
+                        font-family: $heading-font;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 45px;
+                        transition: all .3 ease-in-out;
+                    }
+
                     list-style: none;
-                    color: #fff;
-                    font-family: $heading-font;
-                    font-size: 18px;
-                    font-weight: 600;
-                    line-height: 45px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
 
                     @media (max-width:1199px) {
                         font-size: 17px;
@@ -1344,6 +1363,45 @@
             }
         }
     }
+
+
+    .image {
+        position: relative;
+
+        .img-link {
+            position: absolute;
+            width: 100%;
+            height: 0;
+            left: 0;
+            top: 0;
+            background: rgba(2, 34, 93, 0.67);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease-in-out;
+
+            i {
+                font-size: 45px;
+                color: $white;
+            }
+        }
+    }
+
+    &:hover {
+        .image {
+            position: relative;
+
+            .img-link {
+                height: 100%;
+                opacity: 1;
+                visibility: visible;
+
+            }
+        }
+    }
 }
 
 /*3.9 electry-get-quate-section */
@@ -1436,6 +1494,8 @@
                     }
 
                     .icon {
+                        animation: shake 8s ease infinite;
+
                         img {}
                     }
 
@@ -1479,7 +1539,7 @@
 
         .electry-section-title {
             text-align: left;
-            margin-right: 155px;
+            margin-right: 100px;
 
             @media (max-width:991px) {
                 text-align: center;
@@ -1488,15 +1548,24 @@
                 max-width: 600px;
             }
 
-
-
-
             span {
                 color: #0057ff;
             }
 
             h2 {
                 color: $theme-primary-color-s3;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 67px;
+
+                @include media-query(767px) {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+                @include media-query(330px) {
+                    font-size: 30px;
+                }
 
                 span {
                     color: $theme-primary-color-s2;
@@ -1505,10 +1574,9 @@
                     position: relative;
                     text-transform: capitalize;
                     font-family: "Raleway", sans-serif;
-                    font-weight: 600;
-                    font-size: 45px;
+                    font-size: 60px;
                     font-weight: 700;
-                    line-height: 55px;
+                    line-height: 67px;
                     text-transform: capitalize;
 
                     @include media-query(767px) {
@@ -1545,14 +1613,17 @@
             align-items: center;
             justify-content: center;
 
+            @media (max-width:991px) {
+                height: 255px;
+            }
 
             .video-item {
                 display: inline-block;
 
                 .video-btn {
                     display: inline-block;
-                    width: 55px;
-                    height: 55px;
+                    width: 65px;
+                    height: 65px;
                     line-height: 61px;
                     text-align: center;
                     background: $white;
@@ -1563,12 +1634,13 @@
                         position: absolute;
                         left: -10px;
                         top: -10px;
-                        width: 140%;
-                        height: 140%;
+                        width: 129%;
+                        height: 129%;
                         background: rgba(255, 255, 255, 0.5);
                         content: "";
                         border-radius: 50%;
                         z-index: -1;
+                        animation: pulse 2s linear infinite
                     }
 
                     i {
@@ -1590,7 +1662,6 @@
 
 
     ul {
-        padding: 0 105px;
         background: $theme-primary-color-s2;
         text-align: center;
 
@@ -1634,7 +1705,7 @@
             }
 
             @media (max-width:576px) {
-                font-size: 12px;
+                font-size: 10px;
                 line-height: 25px;
             }
 
@@ -1642,6 +1713,10 @@
                 width: 28.365px;
                 display: inline;
                 margin: 0 25px;
+
+                @media (max-width:1700px) {
+                    margin: 0 10px;
+                }
 
                 @media (max-width:991px) {
                     display: none;
@@ -1657,12 +1732,22 @@
     position: relative;
     z-index: 1;
     padding-top: 100px;
+    overflow: hidden;
+
+    @media (max-width:991px) {
+        padding-top: 90px;
+    }
+
+    @media (max-width:767px) {
+        padding-top: 80px;
+    }
 
     .shape {
         position: absolute;
         left: 0;
         top: 0;
         z-index: -1;
+        animation: bounce2 3s ease infinite;
     }
 
     .shape-2 {
@@ -1707,6 +1792,11 @@
     .contact {
         padding: 50px;
         padding-top: 35px;
+
+        @media (max-width:575px) {
+            padding: 20px;
+            padding-top: 35px;
+        }
 
         .title {
             margin-bottom: 40px;
@@ -1801,6 +1891,7 @@
         background: #FFF;
         box-shadow: 0px 14px 50px 0px #E4E9F1;
         border: transparent;
+        transition: all 500ms ease;
     }
 
     .accordion-button {
@@ -1811,6 +1902,8 @@
         font-family: $heading-font;
         font-size: 20px;
         font-weight: 600;
+        transition: all 200ms linear;
+        transition-delay: 0.1s;
 
         @media (max-width:1199px) {
             font-size: 16px;
@@ -1832,32 +1925,61 @@
     }
 
     .accordion-button::after {
-        background: url(../images/faq-arrosw-btm.png);
+        content: "\e64b";
+        background: $theme-primary-color;
+        font-family: themify;
         background-repeat: no-repeat;
         background-position: center;
         width: 37px;
         height: 36px;
+        color: $white;
+        transition: all .3s ease-in-out;
+        padding-left: 7px;
+        padding-top: 7px;
+
+        @media (max-width:1199px) {
+            padding-left: 10px;
+            padding-top: 9px;
+        }
     }
 
     .accordion-button:not(.collapsed)::after {
         background-image: url(../images/faq-arrosw-top.png);
-        transform: rotate(-180deg);
+        transform: rotate(0deg);
+        background: $theme-primary-color-s3;
+        content: "\e648";
+        font-family: themify;
+        color: $white;
+        transition: all .3s ease-in-out;
+        padding-left: 7px;
+        padding-top: 7px;
+
+        @media (max-width:1199px) {
+            padding-left: 10px;
+            padding-top: 9px;
+        }
     }
 
     .accordion-button:not(.collapsed) {
         box-shadow: inset 0 -1px 0 transparent;
         border: transparent;
 
+
     }
 
     .accordion-body {
         padding: 1rem 25px;
+        transition: all 200ms linear;
+        transition-delay: 0.1s;
 
         @media (max-width:767px) {
             padding: 15px 10px;
         }
 
         .text {
+            transition: all 200ms linear;
+            transition-delay: 0.1s;
+
             p {
                 color: #5A627D;
                 font-family: $base-font;

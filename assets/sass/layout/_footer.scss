@@ -227,6 +227,8 @@
                 img {
                     width: 100%;
                     border-radius: 2px;
+                    position: relative;
+                    z-index: 1;
                 }
             }
         }
@@ -234,7 +236,9 @@
 
     .newsletter {
         padding-left: 30px;
-
+        @media (max-width: 991px) {
+           padding-left: 0;
+        }
         .form-control {
             border-radius: 29.5px;
             background: #112F67;
@@ -254,7 +258,8 @@
             }
         }
 
-        p {
+        p,
+        label {
             color: #B4B4B4;
             font-family: Raleway;
             font-size: 15px;
@@ -317,14 +322,21 @@
         top: 0;
         z-index: -1;
     }
+
     .shape-3 {
         position: absolute;
         left: 0;
         bottom: 0;
         z-index: -1;
+        animation-name: left-to-right-anime;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+
         @media (max-width: 767px) {
             display: none;
-         }
+        }
     }
 
     .shape-4 {
@@ -332,8 +344,13 @@
         right: 0;
         bottom: 0;
         z-index: -1;
+        animation-name: left-to-right-anime;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
         @media (max-width: 767px) {
-           display: none;
+            display: none;
         }
     }
 }

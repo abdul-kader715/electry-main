@@ -120,6 +120,62 @@
 
         }
 
+        .item {
+            width: 254px;
+            height: 152px;
+            background: #0057FF;
+            z-index: 11;
+            text-align: center;
+            padding-top: 20px;
+            position: absolute;
+            left: -120px;
+            bottom: -60px;
+
+            @media (max-width:1550px) {
+                left: -40px;
+            }
+
+            @media (max-width:575px) {
+                display: none;
+            }
+
+            .hsape {
+                position: absolute;
+                right: -30px;
+                top: 0;
+            }
+
+            p {
+                color: #FFF;
+                font-family: Raleway;
+                font-size: 22px;
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+
+            h3 {
+                color: #FFF;
+                font-family: Raleway;
+                font-size: 38px;
+                font-style: italic;
+                font-weight: 400;
+
+                @media (max-width:575px) {
+                    font-size: 30px;
+                }
+
+                span {
+                    font-size: 56px;
+                    font-style: normal;
+                    font-weight: 700;
+
+                    @media (max-width:575px) {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+
         .shape {
             position: absolute;
             left: -15px;
@@ -692,12 +748,6 @@
             text-align: center;
         }
 
-
-
-
-
-
-
         .owl-dots {
             text-align: center;
             padding-top: 15px;
@@ -706,15 +756,46 @@
         .owl-dots button.owl-dot {
             width: 15px;
             height: 15px;
-            border-radius: 50%;
+            border-radius: 100px;
             display: inline-block;
             background: #D6D1D1;
-            margin: 0 3px;
+            margin: 0 7px;
             border: transparent;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 50%;
+                top: 50%;
+                width: 25px;
+                height: 25px;
+                border-radius: 100px;
+                border: 1px solid $theme-primary-color;
+                transition: all .3s ease-in-out;
+                opacity: 0;
+                visibility: hidden;
+                transform: translate(-50%, -50%);
+                @media (max-width:991px) {
+                    top: 46%; 
+                }
+                @media (max-width:767px) {
+                    top: 50%; 
+                    left: 46%;
+                }
+                @media (max-width:575px) {
+                    display: none;
+                }
+            }
         }
 
         .owl-dots button.owl-dot.active {
             background-color: $theme-primary-color;
+
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
         }
 
         .owl-dots button.owl-dot:focus {
@@ -1271,6 +1352,10 @@
         position: absolute;
         left: 110px;
         bottom: 40px;
+        animation-name: left-to-right-anime;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
 
         @media (max-width:1599px) {
             display: none;
@@ -1281,6 +1366,10 @@
         position: absolute;
         right: 150px;
         bottom: 20px;
+        animation-name: left-to-right-anime;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
 
         @media (max-width:1599px) {
             display: none;
@@ -1368,19 +1457,22 @@
 }
 
 /*6.10 electry-blog-section-s2 */
-.electry-blog-section-s2{
-    &.s3{
-        .bg{
+.electry-blog-section-s2 {
+    &.s3 {
+        .bg {
             display: block;
             position: absolute;
+
             @media (max-width:767px) {
                 background-position: center;
                 background-size: cover;
             }
-            img{
+
+            img {
                 @media (max-width:767px) {
                     height: 300px;
                 }
+
                 width: 100%;
             }
         }
@@ -1392,12 +1484,14 @@
     height: 394px;
     position: relative;
     margin-bottom: -75px;
+
     @media (max-width:991px) {
-        height: 494px;  
+        height: 494px;
         margin-bottom: -175px;
     }
+
     @media (max-width:767px) {
-        height: 694px;  
+        height: 694px;
         margin-bottom: -375px;
     }
 

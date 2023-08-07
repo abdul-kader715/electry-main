@@ -596,6 +596,9 @@
         .text {
             margin-left: 35px;
 
+            @media (max-width:1799px) {
+                margin-left: 10px;
+            }
             @media (max-width:1750px) {
                 margin-left: 10px;
             }
@@ -874,6 +877,7 @@
                     @media (max-width:575px) {
                         margin-right: 0;
                         margin-bottom: 20px;
+                        padding: 10px 25px;
                     }
                 }
 
