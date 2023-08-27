@@ -122,6 +122,7 @@
 .topbar .contact-intro ul {
 	float: left;
 	margin-bottom: 0;
+	margin-top: 5px;
 
 	@media (max-width: 991px) {
 		float: none;
@@ -251,10 +252,10 @@
 
 
 .electry-site-header {
-	padding: 0 303px;
+	padding: 0 265px;
 
 	@media (max-width: 1860px) {
-		padding: 0 260px;
+		padding: 0 265px;
 	}
 
 	@media (max-width: 1780px) {
@@ -529,7 +530,7 @@
 .electry-site-header .header-right {
 	.close-form {
 		.theme-btn {
-			padding: 20px 23px;
+			padding: 16px 29px;
 			border-radius: 0;
 			background: $small-black;
 			font-size: 15px;
@@ -1073,7 +1074,7 @@
 			>ul .sub-menu {
 				background-color: #fff;
 				box-shadow: 0px 2px 20px 0px rgba(62, 65, 159, 0.09);
-				width: 225px;
+				width: 208px;
 				position: absolute;
 				padding: 20px 0;
 				left: 0;
@@ -1087,7 +1088,7 @@
 			>ul>li .sub-menu a {
 				font-size: 16px;
 				display: block;
-				padding: 8px 15px;
+				padding: 10px 29px;
 				color: $dark-gray;
 				position: relative;
 				overflow: hidden;

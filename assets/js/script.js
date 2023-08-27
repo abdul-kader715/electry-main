@@ -219,8 +219,11 @@
         document.querySelector(".loading").classList.add("fade-out");
         setTimeout(() => {
             document.querySelector(".loading").style.display = "none";
-        }, 1600)
+        }, 500)
     })
+
+
+
 
     /* AoS */
     AOS.init();
@@ -228,22 +231,21 @@
     /*------------------------------------------
         = WOW ANIMATION SETTING
     -------------------------------------------*/
-
-
     var wow = new WOW({
-        boxClass: 'wow',
-        animateClass: 'animated',
-        offset: 0,
-        mobile: true,
-        live: true,
-        callback: function (box) {},
-        scrollContainer: null,
-        resetAnimation: true,
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
     });
 
-
-
+    if ($(".wow").length) {
+    }
     wow.init();
+
+     
+
+  
 
 
     /*------------------------------------------
@@ -363,26 +365,6 @@
     // masonryGridSetting();
 
 
-    /*------------------------------------------
-        = FUNFACT
-    -------------------------------------------*/
-    if ($(".odometer").length) {
-        $('.odometer').appear();
-        $(document.body).on('appear', '.odometer', function (e) {
-            var odo = $(".odometer");
-            odo.each(function () {
-                var countNumber = $(this).attr("data-count");
-                $(this).html(countNumber);
-            });
-        });
-    }
-
-
-
-    /*------------------------------------------
-        = STICKY HEADER
-    -------------------------------------------*/
-
     // Function for clone an element for sticky menu
     function cloneNavForSticyMenu($ele, $newElmClass) {
         $ele.addClass('original').clone().insertAfter($ele).addClass($newElmClass).removeClass('original');
@@ -417,8 +399,6 @@
 
 
     }
-
-
 
     /*------------------------------------------
             = Header search toggle
@@ -694,7 +674,6 @@
         });
     }
 
-
     /*------------------------------------------
         = text-slider
     -------------------------------------------*/
@@ -735,9 +714,19 @@
     ]
     });
 
-   
-
-   
+    if ($(".odometer").length) {
+        $(".odometer").appear();
+        $(document.body).on("appear", ".odometer", function (e) {
+            var odo = $(".odometer");
+            odo.each(function () {
+                var countNumber = $(this).attr("data-count");
+                $(this).html(countNumber);
+            });
+            window.odometerOptions = {
+                format: "d",
+            };
+        });
+    }
 
     /*------------------------------------------
         = project-slider
@@ -1078,7 +1067,6 @@
         WHEN DOCUMENT LOADING
     ==========================================================================*/
     $(window).on('load', function () {
-
 
         wow.init();
         sortingGallery();
