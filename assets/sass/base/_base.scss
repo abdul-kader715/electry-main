@@ -192,11 +192,11 @@ img{
     bottom: 15px;
     @include transition-time(0.2s);
 
-    @include media-query(991px) {
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-    }
+    // @include media-query(991px) {
+    //     width: 35px;
+    //     height: 35px;
+    //     line-height: 35px;
+    // }
 
     &:hover {
         background-color: $theme-primary-color;

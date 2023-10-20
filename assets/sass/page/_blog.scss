@@ -3,12 +3,14 @@
 //blog list area start 
 
 .blog-section{
-	@media (max-width:991px) {
-		padding-bottom: 60px;
-	}
-	@media (max-width:767px) {
-		padding-bottom: 50px;
-	}
+	padding: 115px 0;
+    @media (max-width:991px) {
+        padding: 80px 0  50px;
+    }
+    @media (max-width:767px) {
+        padding: 70px 0 40px;
+    }
+	
 }
 .blog-list-item {
 	margin-bottom: 65px;

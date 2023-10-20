@@ -1,7 +1,13 @@
 /*8. electry-proejct-single-section */
 
 .electry-proejct-single-section {
-
+    padding: 115px 0;
+    @media (max-width:991px) {
+        padding: 80px 0;
+    }
+    @media (max-width:767px) {
+        padding: 70px 0;
+    }
     .top-content {
 
         .image {

@@ -1,7 +1,7 @@
 /*3.2 electry-features-section */
 .electry-features-section {
     padding-top: 55px;
-    padding-bottom: 70px;
+    padding-bottom: 85px;
 
     @media (max-width:991px) {
         padding-top: 90px;
@@ -138,6 +138,14 @@
 /*3.3 electry-about-section */
 .electry-about-section {
     padding-top: 0;
+    padding-bottom: 110px;
+    @media (max-width:991px) {
+        padding-bottom: 90px;
+    }
+
+    @media (max-width:575px) {
+        padding-bottom: 80px;
+    }
 }
 
 .about-left-wrap {
@@ -490,14 +498,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-bottom: 90px;
+    padding: 110px 0 80px;
 
     @media (max-width: 991px) {
-        padding-bottom: 60px;
+        padding: 90px 0 60px;
     }
 
     @media (max-width: 767px) {
-        padding-bottom: 50px;
+        padding: 80px 0 70px;
     }
 
     &.s3 {
@@ -795,6 +803,7 @@
 .electry-trusted-section {
     position: relative;
     margin-bottom: -47px;
+    z-index: -1;
 
     @media (max-width:991px) {
         margin-bottom: 0;
@@ -969,10 +978,12 @@
     background: $theme-primary-color-s3;
     position: relative;
     z-index: 1;
+    padding-top: 110px;
     padding-bottom: 470px;
 
     @media (max-width:991px) {
         margin-bottom: 0;
+        padding-top: 90px;
     }
 
     @media (max-width:575px) {
@@ -1214,7 +1225,7 @@
     position: relative;
     z-index: 1;
     margin-top: -375px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
 
     @media (max-width:767px) {
         padding-bottom: 50px;
@@ -2537,14 +2548,15 @@
 .electry-blog-section-s2 {
     position: relative;
     z-index: 1;
-    padding-bottom: 90px;
+    padding: 110px 0;
+    padding-bottom: 80px;
 
     @media (max-width:991px) {
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
 
     @media (max-width:767px) {
-        padding-bottom: 50px;
+        padding-bottom: 40px;
     }
 
     .bg {
